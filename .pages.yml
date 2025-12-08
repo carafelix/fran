@@ -1,7 +1,7 @@
 media: media
 content:
   - name: pinturas
-    label: pinturas
+    label: Pinturas
     type: collection
     path: src/content/pinturas
     view: 
