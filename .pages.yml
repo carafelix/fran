@@ -28,8 +28,8 @@ content:
         label: Fecha de creación
         type: date
         options:
-          format: yyyy
-          min: 2001
+          format: yyyy-MM-dd
+          min: 2001-01-01
       - name: medio
         label: Materiales blablabla
         type: string
