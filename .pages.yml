@@ -1,7 +1,7 @@
 media: src/content/media
 content:
   - name: Obras
-    label: obras
+    label: Obras de art
     type: collection
     path: src/content/obras
     view: 
