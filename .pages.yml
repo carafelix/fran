@@ -66,7 +66,7 @@ content:
         type: string
       - name: cover
         label: Foto principal
-        type: string
+        type: image
       - name: body
         label: Body
         type: rich-text
