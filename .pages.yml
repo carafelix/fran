@@ -1,4 +1,4 @@
-media: media
+media: src/content/media
 content:
   - name: pinturas
     label: Pinturas
