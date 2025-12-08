@@ -1,9 +1,9 @@
 media: src/content/media
 content:
-  - name: pinturas
-    label: Pinturas
+  - name: Obras
+    label: obras
     type: collection
-    path: src/content/pinturas
+    path: src/content/obras
     view: 
       fields: ["titlo","categoria","serie","fecha","medio", "descript", "ancho", "largo", "foto", "galeria", "body"]
     fields:
