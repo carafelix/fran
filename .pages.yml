@@ -32,7 +32,10 @@ content:
           min: 2001-01-01
       - name: medio
         label: Materiales blablabla
-        type: string
+        type: select
+        options:
+          values: [ "Óleo sobre tela" ]
+          creatable: true
       - name: descript
         label: Descripción
         type: string
