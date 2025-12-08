@@ -59,10 +59,13 @@ content:
     type: collection
     path: src/content/blog
     view: 
-      fields: ["titulo", "body"]
+      fields: ["titulo", "cover", "body", ]
     fields: 
       - name: titulo
         label: titulo
+        type: string
+      - name: cover
+        label: Foto principal
         type: string
       - name: body
         label: Body
