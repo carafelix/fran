@@ -5,7 +5,7 @@ content:
     type: collection
     path: src/content/obras
     view: 
-      fields: ["titlo","categoria","serie","fecha","medio", "descript", "ancho", "largo", "foto", "galeria", "body"]
+      fields: ["titlo","categoria","serie","fecha","medio", "descript", "ancho", "largo", "foto", "galeria", "body", "displayPriority", "disponible"]
     fields:
       - name: titlo
         label: Titlo de la obra
@@ -57,6 +57,12 @@ content:
       - name: body
         label: Body
         type: rich-text
+      - name: displayPriority
+        label: Prioridad al mostrar cuando empatan (1 es primero) 
+        type: number
+      - name: disponible
+        label: Disponible para vender
+        type: boolean
   - name: blog
     label: Blog
     type: collection
