@@ -1,0 +1,69 @@
+media: media
+content:
+  - name: pinturas
+    label: pinturas
+    type: collection
+    path: src/content/pinturas
+    view: 
+      fields: ["titlo","categoria","serie","fecha","medio", "descript", "ancho", "largo", "foto", "galeria", "body"]
+    fields:
+      - name: titlo
+        label: Titlo de la obra
+        type: string
+      - name: categoria
+        label: Categorias a las que pertenece
+        type: select
+        options:
+          values: [ Pintura, Escultura ]
+          multiple: true
+          creatable: true
+      - name: serie
+        label: Serie de obras en la que se enmarca
+        type: select
+        options:
+          values: [ Locurillas, Inglaterra, B&W ]
+          multiple: true
+          creatable: true
+      - name: fecha
+        label: Fecha de creación
+        type: date
+        options:
+          format: yyyy-MM-dd
+          min: 2001-01-01
+      - name: medio
+        label: Materiales blablabla
+        type: string
+      - name: descript
+        label: Descripción
+        type: string
+      - name: ancho
+        label: Medida de ancho
+        type: number
+      - name: largo
+        label: Medida de largo
+        type: number
+      - name: foto
+        label: Foto principal de la obra
+        type: image
+      - name: galeria
+        label: Galeria detalles obra
+        type: image
+        options:
+          multiple:
+            max: 10
+      - name: body
+        label: Body
+        type: rich-text
+  - name: blog
+    label: Blog
+    type: collection
+    path: src/content/blog
+    view: 
+      fields: ["titulo", "body"]
+    fields: 
+      - name: titulo
+        label: titulo
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
