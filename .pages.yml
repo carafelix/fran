@@ -5,7 +5,7 @@ content:
     type: collection
     path: src/content/obras
     view: 
-      fields: ["titlo","categoria","serie","fecha","medio", "descript", "ancho", "largo", "foto", "galeria", "body", "displayPriority", "disponible"]
+      fields: ["titlo","categoria","serie","fecha","medio", "descript", "ancho", "alto", "foto", "galeria", "body", "displayPriority", "disponible"]
     fields:
       - name: titlo
         label: Titlo de la obra
