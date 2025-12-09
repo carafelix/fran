@@ -42,8 +42,8 @@ content:
       - name: ancho
         label: Medida de ancho
         type: number
-      - name: largo
-        label: Medida de largo
+      - name: alto
+        label: Medida de alto
         type: number
       - name: foto
         label: Foto principal de la obra
