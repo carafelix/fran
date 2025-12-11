@@ -5,26 +5,27 @@ const blog = defineCollection({
   loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: "./src/content/blog" }),
   schema: ({ image }) =>
     z.object({
-      title: z.string(),
-      description: z.string(),
-      publicationDate: z.date(),
-      image: image().optional(),
-      imageAlt: z.string().optional(),
-      tags: z.array(z.string()).optional(),
+      titulo: z.string(),
+      cover: image().optional(),
     }),
 });
 
 const projects = defineCollection({
   loader: glob({
     pattern: "**/[^_]*.{md,mdx}",
-    base: "./src/content/projects",
+    base: "./src/content/obras",
   }),
-  schema: () =>
+  schema: ( { image }) =>
     z.object({
-      title: z.string(),
-      description: z.string(),
-      publicationDate: z.date().optional(),
-      href: z.string(),
+      titlo: z.string(),
+      categoria: z.array(z.string()),
+      serie: z.array(z.string()).optional(),
+      fecha: z.date(),
+      medio: z.string(),
+      descript: z.string().optional(),
+      ancho: z.number(),
+      alto: z.number(),
+      foto: image()
     }),
 });
 
