@@ -1,8 +1,7 @@
 ---
-titulo: Jorge Teiller
+titulo: Jorge Teillier
+categoria: Pintura
 fecha: 2022-01-01
-categoria:
-  - Pintura
 medio: Óleo sobre tela
 ancho: 70
 alto: 50
