@@ -16,6 +16,7 @@ content:
         options:
           values: [ Pintura, Escultura ]
           creatable: true
+          multiple: true
         default: Pintura 
       - name: serie
         label: Serie
