@@ -1,8 +1,11 @@
 ---
-titlo: Camioneta
+titulo: Camioneta
 fecha: 2024-01-01
+categoria:
+  - Pintura
+medio: Óleo sobre tela
 ancho: 160
 alto: 130
-foto: /src/content/media/WhatsApp Image 2025-12-08 at 18.17.23-2.jpeg
+foto: /src/content/media/camioneta.jpg
 disponible: false
 ---

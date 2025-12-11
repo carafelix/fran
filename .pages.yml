@@ -5,10 +5,10 @@ content:
     type: collection
     path: src/content/obras
     view: 
-      fields: ["titlo","categoria","serie","fecha","medio", "descript", "ancho", "alto", "foto", "galeria", "body", "displayPriority", "disponible"]
+      fields: ["titulo","categoria","serie","fecha","medio", "descript", "ancho", "alto", "foto", "galeria", "body", "displayPriority", "disponible"]
     fields:
-      - name: titlo
-        label: Titlo de la obra
+      - name: titulo
+        label: Titulo de la obra
         type: string
       - name: categoria
         label: Categorias a las que pertenece

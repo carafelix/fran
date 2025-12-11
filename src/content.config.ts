@@ -17,8 +17,8 @@ const projects = defineCollection({
   }),
   schema: ( { image }) =>
     z.object({
-      titlo: z.string(),
-      categoria: z.array(z.string()),
+      titulo: z.string(),
+      categoria: z.array(z.string()).optional(),
       serie: z.array(z.string()).optional(),
       fecha: z.date(),
       medio: z.string(),
