@@ -15,14 +15,13 @@ content:
         type: select
         options:
           values: [ Pintura, Escultura ]
-          multiple: true
           creatable: true
+        default: Pintura 
       - name: serie
         label: Serie de obras en la que se enmarca
         type: select
         options:
           values: [ Locurillas, Inglaterra, B&W ]
-          multiple: true
           creatable: true
       - name: fecha
         label: Fecha de creación
@@ -36,6 +35,7 @@ content:
         options:
           values: [ "Óleo sobre tela" ]
           creatable: true
+        default: "Óleo sobre tela"
       - name: descript
         label: Descripción
         type: string
