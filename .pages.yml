@@ -11,14 +11,14 @@ content:
         label: Titulo de la obra
         type: string
       - name: categoria
-        label: Categorias a las que pertenece
+        label: Categorias
         type: select
         options:
           values: [ Pintura, Escultura ]
           creatable: true
         default: Pintura 
       - name: serie
-        label: Serie de obras en la que se enmarca
+        label: Serie
         type: select
         options:
           values: [ Locurillas, Inglaterra, B&W ]
@@ -30,7 +30,7 @@ content:
           format: yyyy-MM-dd
           min: 2001-01-01
       - name: medio
-        label: Materiales blablabla
+        label: Materiales
         type: select
         options:
           values: [ "Óleo sobre tela" , "Acrílico sobre tela"]
@@ -39,16 +39,16 @@ content:
         label: Descripción
         type: string
       - name: ancho
-        label: Medida de ancho
+        label: Ancho
         type: number
       - name: alto
-        label: Medida de alto
+        label: Alto
         type: number
       - name: foto
-        label: Foto principal de la obra
+        label: Foto principal
         type: image
       - name: galeria
-        label: Galeria detalles obra
+        label: Galería detalles
         type: image
         options:
           multiple:
@@ -57,11 +57,12 @@ content:
         label: Body
         type: rich-text
       - name: displayPriority
-        label: Prioridad al mostrar cuando empatan (1 es primero) 
+        label: Prioridad
         type: number
       - name: disponible
-        label: Disponible para vender
+        label: Disponible
         type: boolean
+        default: false
   - name: blog
     label: Blog
     type: collection
