@@ -48,7 +48,7 @@ content:
         label: Foto principal
         type: image
       - name: galeria
-        label: Galería detalles
+        label: Galería
         type: image
         options:
           multiple:
