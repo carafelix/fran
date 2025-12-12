@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+import ExternalLink from "@/components/ExternalLink.astro";
+import type { Obra } from "@/types";
+
+interface Props {
+  obra: Obra
+}
+
+let { obra } = Astro.props
+
+const año = obra.data.fecha?.getFullYear()
+const titulo = obra.data.titulo
+
+---
+
+<article class="py-3">
+  <div>
+    {titulo ? titulo : 'ST'}
+    {año ? año : null}
+    <div lg="hidden">
+      <Image src={ obra.data.foto } alt={'foto'}/>
+    </div>
+  </div>
+</article>

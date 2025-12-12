@@ -1,3 +1,5 @@
+import type { CollectionEntry } from 'astro:content'
+
 export type SiteConfiguration = {
   title: string;
   description: string;
@@ -26,3 +28,5 @@ export type SocialLink = {
   label: string;
   href: string;
 };
+
+export type Obra = CollectionEntry<'obras'>
