@@ -1,6 +1,6 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
-import UnoCSS from 'unocss/astro'
+import UnoCSS from "unocss/astro";
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,5 +13,12 @@ export default defineConfig({
       theme: "dark-plus",
     },
   },
-  site: "https://barebones.superwebthemes.com",
+  i18n: {
+    locales: ["es", "en"],
+    defaultLocale: "es",
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
+  site: "https://fran735.cl",
 });

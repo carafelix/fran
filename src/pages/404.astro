@@ -1,15 +1,18 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
-
 import SeoPage from "@/components/SeoPage.astro";
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <BaseLayout>
-  <SeoPage slot="head" title="404: Page Not Found" />
+  <SeoPage slot="head" title={t('404.not')} />
   <div class="mt-16 text-center">
-    <h2 class="mb-3 text-4xl font-bold text-balance">404: Page Not Found</h2>
+    <h2 class="mb-3 text-4xl font-bold text-balance">{t('404.not')}</h2>
     <p class="text-balance">
-      Whatever you're looking for doesn't appear to be available. Sorry.
+      {t('404.sorry')}
     </p>
   </div>
 </BaseLayout>
