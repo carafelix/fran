@@ -1,6 +1,7 @@
 ---
 import { SITE } from "@/siteConfig";
 import ThemeToggle from "@/components/ThemeToggle.astro";
+import LanguagePicker from "./LanguagePicker.astro";
 
 const year = new Date().getFullYear();
 ---
@@ -10,4 +11,5 @@ const year = new Date().getFullYear();
 >
   <ThemeToggle />
   <span class="prose mt-2 block">{year} by <a href={SITE.author.href}>{SITE.author.name}</a></span>
+  <LanguagePicker/>
 </footer>

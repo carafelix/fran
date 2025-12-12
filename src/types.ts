@@ -1,4 +1,5 @@
 import type { CollectionEntry } from 'astro:content'
+import type { i18nLabels } from '@/i18n/utils';
 
 export type SiteConfiguration = {
   title: string;
@@ -16,8 +17,8 @@ export type NavigationLinks = {
 };
 
 export type NavigationLink = {
-  label: string;
   path: string;
+  label: i18nLabels;
 };
 
 export type SocialLinks = {

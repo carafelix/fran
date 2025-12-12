@@ -4,6 +4,9 @@ import UnoCSS from "unocss/astro";
 
 // https://astro.build/config
 export default defineConfig({
+  redirects: {
+    '/': '/es'
+  },
   integrations: [
     UnoCSS({ injectReset: true }),
     sitemap(),

@@ -7,8 +7,8 @@ import type {
 export const SITE: SiteConfiguration = {
   title: "Fran735",
   description:
-    "A barebones starter theme. Built with Astro, Tailwind CSS, and Markdown.",
-  href: "https://barebones.superwebthemes.com",
+    "Francisco Benavides Artista Visual",
+  href: "https://fran735.cl",
   author: {
     name: 'Hero Protagonist',
     href: 'https://heroprotagonist.is-a.dev/'
@@ -17,9 +17,9 @@ export const SITE: SiteConfiguration = {
 };
 
 export const NAV_LINKS: NavigationLinks = {
-  blog: {
-    path: "/blog",
-    label: "Biografía",
+  bio: {
+    path: "/bio",
+    label: "nav.bio",
   },
 };
 

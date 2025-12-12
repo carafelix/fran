@@ -1,14 +1,10 @@
-export const languages = {
-    es: 'Spanish',
-    en: 'English',
-};
-
 export const defaultLang = 'es';
+export const showDefaultLang = true;
 
 export const ui = {
   en: {
     'nav.home': 'Fran375',
-    'nav.biography': 'Biography',
+    'nav.bio': 'Biography',
     'works': 'Works',
     'work.title': 'Title',
     'work.dimensions': 'Dimensions',
@@ -21,7 +17,7 @@ export const ui = {
     '404.sorry': "Whatever you're looking for doesn't appear to be available. Sorry."
   },
   es: {
-    'nav.biography': 'Biografía',
+    'nav.bio': 'Biografía',
     'works': 'Obras',
     'work.title': 'Título',
     'work.dimensions': 'Dimensiones',

@@ -1,0 +1,33 @@
+---
+import { getLangFromUrl, useTranslatedPath } from '@/i18n/utils';
+
+const currentUrl = Astro.url
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+const antilang = lang === 'es' ? 'en' : 'es'
+const basePath = currentUrl.pathname.replace(/^\/(en|es)/, '');
+---
+<ul>
+    <li>
+      <a href={translatePath(basePath, antilang)}>{lang === 'en' ? '🇪🇸' : '🇬🇧' }</a>
+    </li>
+</ul>
+
+
+<div
+  id="theme-toggle"
+  class="relative z-0 inline-grid grid-cols-2 gap-0.5 bg-neutral-950/5 p-0.75 text-neutral-950 dark:bg-white/10 dark:text-white"
+>
+</div>
+
+<style>
+  .theme-button.active {
+    background-color: white;
+    outline: 1px solid;
+  }
+
+  :global(.dark) .theme-button.active {
+    background-color: var(--active-bg-dark, black);
+    outline: 1px solid;
+  }
+</style>

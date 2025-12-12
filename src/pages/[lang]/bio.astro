@@ -2,18 +2,24 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import SeoPage from "@/components/SeoPage.astro";
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
-import { getCollection } from "astro:content";
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: "en" }},
+    { params: { lang: "es" }},
+  ];
+}
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
 <BaseLayout>
-  <SeoPage slot="head" title={t('404.not')} />
+  <SeoPage slot="head" title={t('nav.bio')} />
   <div class="mt-16 text-center">
-    <h2 class="mb-3 text-4xl font-bold text-balance">{t('404.not')}</h2>
+    <h2 class="mb-3 text-4xl font-bold text-balance">{t('nav.bio')}</h2>
     <p class="text-balance">
-      {t('404.sorry')}
+      {t('nav.bio')}
     </p>
   </div>
 </BaseLayout>

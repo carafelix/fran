@@ -1,12 +1,17 @@
 ---
+import { getLangFromUrl, useTranslations, useTranslatedPath } from "@/i18n/utils";
 import { NAV_LINKS, SITE } from "@/siteConfig.ts";
+
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+const t = useTranslations(lang);
 ---
 
 <header
   class="mx-auto flex max-w-screen-lg flex-wrap items-center justify-between p-3 pb-8 font-sans sm:p-6"
 >
   <a
-    href="/"
+    href={translatePath('/')}
     class="text-lg font-semibold text-black sm:text-xl dark:text-white"
     >{SITE.title}</a
   >
@@ -16,8 +21,8 @@ import { NAV_LINKS, SITE } from "@/siteConfig.ts";
         Object.keys(NAV_LINKS).map((navItemKey) => {
           return (
             <li>
-              <a href={NAV_LINKS[navItemKey].path} class="prose">
-                {NAV_LINKS[navItemKey].label}
+              <a href={translatePath(NAV_LINKS[navItemKey].path)} class="prose">
+                {t(NAV_LINKS[navItemKey].label)}
               </a>
             </li>
           );
