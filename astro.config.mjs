@@ -1,17 +1,17 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
-import tailwindcss from "@tailwindcss/vite";
+import UnoCSS from 'unocss/astro'
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [sitemap()],
+  integrations: [
+    UnoCSS({ injectReset: true }),
+    sitemap(),
+  ],
   markdown: {
     shikiConfig: {
       theme: "dark-plus",
     },
   },
   site: "https://barebones.superwebthemes.com",
-  vite: {
-    plugins: [tailwindcss()],
-  },
 });

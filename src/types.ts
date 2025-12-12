@@ -2,7 +2,10 @@ export type SiteConfiguration = {
   title: string;
   description: string;
   href: string;
-  author: string;
+  author: {
+    name: string,
+    href: string
+  }
   locale: string;
 };
 

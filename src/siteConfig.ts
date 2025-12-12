@@ -5,40 +5,31 @@ import type {
 } from "@/types.ts";
 
 export const SITE: SiteConfiguration = {
-  title: "Barebones",
+  title: "Fran735",
   description:
     "A barebones starter theme. Built with Astro, Tailwind CSS, and Markdown.",
   href: "https://barebones.superwebthemes.com",
-  author: "SuperWeb Development Inc.",
-  locale: "en-CA",
+  author: {
+    name: 'Hero Protagonist',
+    href: 'https://heroprotagonist.is-a.dev/'
+  },
+  locale: "es-CL",
 };
 
 export const NAV_LINKS: NavigationLinks = {
   blog: {
     path: "/blog",
-    label: "Blog",
-  },
-  projects: {
-    path: "/projects",
-    label: "Projects",
-  },
-  documentation: {
-    path: "https://docs.superwebthemes.com",
-    label: "Documentation",
+    label: "Biografía",
   },
 };
 
 export const SOCIAL_LINKS: SocialLinks = {
   email: {
     label: "Email",
-    href: "mailto:ttl@trevortylerlee.com",
+    href: "yo@fran735.cl",
   },
-  github: {
-    label: "GitHub",
-    href: "https://github.com/trevortylerlee",
-  },
-  twitter: {
-    label: "X (formerly Twitter)",
-    href: "https://twitter.com/boogerbuttcheek",
-  },
+  instagram: {
+    label: "Instagram",
+    href: "https://www.instagram.com/fraani3/",
+  }
 };

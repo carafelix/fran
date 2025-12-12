@@ -19,8 +19,10 @@
     "typescript": "^5.9.3"
   },
   "devDependencies": {
+    "@unocss/reset": "^66.5.10",
     "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.7.2"
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "unocss": "^66.5.10"
   }
 }
